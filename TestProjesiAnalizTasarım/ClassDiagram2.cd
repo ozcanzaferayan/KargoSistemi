@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TestProjesiAnalizTasarım.AçıkEksiltme">
+    <Position X="7.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAMAEAAABAAgAAACAAAAAAA=</HashCode>
+      <FileName>AçıkEksiltme.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="taşıyıcı" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.IDGenerator">
+    <Position X="10" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAEAAAAAAAAAAQAAEAAAgAAgAAgAAAAAAAABAAA=</HashCode>
+      <FileName>IDGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.Kargoİşi">
+    <Position X="1.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAgAAEAAAAACAAQIAAAAAAASAAAAEAEAA=</HashCode>
+      <FileName>Kargoİşi.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="müşteri" />
+      <Field Name="minimumFiyat" />
+      <Field Name="ürünLineItem" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.MüşterininTaşıyıcıyıSeçmesi">
+    <Position X="5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAQAAAAAAAAAQAEAECAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>MüşterininTaşıyıcıyıSeçmesi.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="kargoİşi" />
+      <Field Name="işlemYapanMüşteri" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.Register">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CMCAAAAEAAAAABEAAAAAASsIQAIAAAggCREIAAwAAAg=</HashCode>
+      <FileName>Register.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="mts" />
+      <Field Name="kargoİşi" />
+      <Field Name="facade" />
+      <Field Name="açıkEksiltme" />
+      <Field Name="kullanıcı" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.Teklif">
+    <Position X="0.5" Y="20.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAECAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Teklif.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="kişi" />
+      <Field Name="fiyat" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.Facade.DBFacade">
+    <Position X="9.5" Y="8" Width="1.5" />
+    <AssociationLine Name="facade" Type="TestProjesiAnalizTasarım.Facade.DBFacade" ManuallyRouted="true">
+      <Path>
+        <Point X="10.032" Y="9.873" />
+        <Point X="10.032" Y="10.546" />
+        <Point X="10.636" Y="10.546" />
+        <Point X="10.636" Y="10.095" />
+        <Point X="10.478" Y="10.095" />
+        <Point X="10.478" Y="9.873" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAABAAAAAAAAABAAAAAAAAgAAAAQAAAg=</HashCode>
+      <FileName>Facade\DBFacade.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="facade" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="mappers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.Facade.Mappers.DummyAçıkEksiltmeMapper" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAABAAAAAAAAAAAAAAAAAAgAAAAAAAAg=</HashCode>
+      <FileName>Facade\Mappers\DummyAçıkEksiltmeMapper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.208" />
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.Facade.Mappers.DummyKargoİşiMapper" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAABAAAAAAAAAAAAAAAAAAgAAAAAEAAg=</HashCode>
+      <FileName>Facade\Mappers\DummyKargoİşiMapper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.Facade.Mappers.DummyKişiMapper" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAFAAAAAAAAAAAAAAAAAAgAAAAAAAAg=</HashCode>
+      <FileName>Facade\Mappers\DummyKişiMapper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.Facade.Mappers.DummyMüşteriMapper" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAQAAAAgIAAAAAAAg=</HashCode>
+      <FileName>Facade\Mappers\DummyMüşteriMapper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.Facade.Mappers.DummyMüşterininTaşıyıcıyıSeçmesiMapper" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAACgAAAAAAAAg=</HashCode>
+      <FileName>Facade\Mappers\DummyMüşterininTaşıyıcıyıSeçmesiMapper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.Facade.Mappers.DummyTaşıyıcıMapper" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAABAAAAAAAAAAAAAAAAAAgAAAAABAAg=</HashCode>
+      <FileName>Facade\Mappers\DummyTaşıyıcıMapper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.Facade.Mappers.DummyTeklifMapper" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAgQAAAAAAAg=</HashCode>
+      <FileName>Facade\Mappers\DummyTeklifMapper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.Facade.Mappers.DummyÜrünDescriptionMapper" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAgAAAAAAAAg=</HashCode>
+      <FileName>Facade\Mappers\DummyÜrünDescriptionMapper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.Facade.Mappers.DummyÜrünMapper" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAgAAAAAAAAg=</HashCode>
+      <FileName>Facade\Mappers\DummyÜrünMapper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.Kişiler.Kişi" Collapsed="true">
+    <Position X="1.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAEAAAAAAAAAAAAAAAACAAAAAAAAAQ=</HashCode>
+      <FileName>Kişiler\Kişi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.Kişiler.Müşteri" Collapsed="true">
+    <Position X="0.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Kişiler\Müşteri.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.Kişiler.Taşıyıcı" Collapsed="true">
+    <Position X="2.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Kişiler\Taşıyıcı.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.ÜrünBilgileri.Ağırlık">
+    <Position X="7.5" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>ÜrünBilgileri\Ağırlık.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.ÜrünBilgileri.Boyut">
+    <Position X="5.25" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAE=</HashCode>
+      <FileName>ÜrünBilgileri\Boyut.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.ÜrünBilgileri.Fiyat">
+    <Position X="1.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>ÜrünBilgileri\Fiyat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.ÜrünBilgileri.Tür">
+    <Position X="3.5" Y="18.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="TestProjesiAnalizTasarım.ÜrünBilgileri.Tür.Türler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ÜrünBilgileri\Tür.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ÜrünBilgileri\Tür.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.ÜrünBilgileri.Ürün" BaseTypeListCollapsed="true">
+    <Position X="9" Y="16" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>ÜrünBilgileri\Ürün.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.ÜrünBilgileri.ÜrünDescription" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAEAAAAAQAAAAAAAAgAAAgAAABAAAA=</HashCode>
+      <FileName>ÜrünBilgileri\ÜrünDescription.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="boyut" />
+      <Field Name="ağırlık" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TestProjesiAnalizTasarım.ÜrünBilgileri.ÜrünLineItem">
+    <Position X="4" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAEAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>ÜrünBilgileri\ÜrünLineItem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ürünDescription" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="TestProjesiAnalizTasarım.Facade.Mappers.IMapper">
+    <Position X="12" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAgAAAAAAAAg=</HashCode>
+      <FileName>Facade\Mappers\IMapper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
